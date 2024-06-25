@@ -1,0 +1,118 @@
+.joinpage{
+    background-color: rgba(0, 0, 0, 0.926);
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.joinchat{
+    /* border: 1px solid rgb(255, 255, 255); */
+    height: 55%;
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    border-radius: 7px;
+}
+.joinchat h1{
+    font-size: 14px;
+    border-bottom: 4px solid white ;
+    padding: 0px 70px;
+    padding-bottom: 10px;
+}
+.joinchat img{
+    height: 40px;
+    background-color: aliceblue;
+    border-radius: 100%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+#nameInp{
+    height: 30px;
+    width: 210px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    background-color: aquamarine;
+    border-radius: 5px;
+    text-align: center;
+    color: rgb(54, 29, 29);
+}
+#but{
+    height: 30px;
+    width: 210px;
+    margin-top: 5px;
+    border: none;
+    background-color: rgb(255, 3, 3);
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    transition: 200ms;
+}
+#but:hover{
+    background-color:rgb(190, 7, 7) ;
+    
+}
+
+/* @media only screen and (max-width: 600px) {
+    .joinchat{
+       border: none;
+    }
+    .joinchat h1 {
+        font-size: 12px !important;
+        padding: 0 20px !important;
+        padding-bottom: 5px !important;
+    }
+    .joinchat img {
+        height: 30px !important;
+        margin-top: 20px !important;
+        margin-bottom: 15px !important;
+    }
+} */
+@media(max-aspect-ratio:7/10){
+    .joinchat{
+        margin-top: 50%;
+        width: 100vw;
+        height: 100vh;
+    }
+    .joinchat h1{
+        font-size: 20px;
+        border-bottom: 4px solid white ;
+        padding: 0px 107px;
+        padding-bottom: 10px;
+    }
+    .joinchat img{
+        height: 40px;
+        background-color: aliceblue;
+        border-radius: 100%;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    
+#nameInp{
+    height: 50px;
+    width: 70%;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    background-color: aquamarine;
+    border-radius: 8px;
+    text-align: center;
+    color: rgb(54, 29, 29);
+    font-size: 19px;
+}
+#but{
+    height: 50px;
+    width: 70vw;
+    margin-top: 8px;
+    font-size: 19px;
+    border: none;
+    background-color: rgb(255, 3, 3);
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    transition: 200ms;
+}
+}

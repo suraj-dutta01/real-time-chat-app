@@ -1,0 +1,148 @@
+.chatPage {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    background-color: black;
+}
+
+.chatContainer {
+    background-color: rgb(170, 227, 209);
+    height: 50%;
+    width: 60%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.chatHeader {
+    background-color: rgb(34, 72, 89);
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    color: white;
+}
+
+.chatHeader span {
+    color: yellow;
+}
+
+.chatHeader img {
+    margin-top: 5px;
+    height: 30px;
+    transition: 700ms;
+    cursor: pointer;
+}
+
+.chatHeader img:hover {
+    transform: scale(1.1) rotate(180deg);
+}
+
+.chatBox {
+    border: 1px solid rgb(5, 3, 3);
+    height: 70%;
+    box-sizing: border-box;
+}
+
+.inputBox {
+    border: 1px solid rgb(5, 3, 3);
+    height: 15%;
+    display: flex;
+    overflow: hidden;
+}
+
+#chatInput {
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    padding-left: 2.4vmax;
+    font-size: 16px;
+}
+
+#sendBtn {
+    width: 10%;
+    box-sizing: border-box;
+    background-color: aqua;
+    border: none;
+    border-left: 1px solid black;
+    transition: 200ms;
+}
+
+#sendBtn:hover {
+    cursor: pointer;
+    background-color: rgb(3, 182, 182);
+    transform: scale(1.05);
+}
+
+@media (max-aspect-ratio: 7/10) {
+    .chatContainer {
+        background-color: rgb(170, 227, 209);
+        height: 100vh!important;
+        width: 100vw!important;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .chatHeader {
+        background-color: rgb(34, 72, 89);
+        height: 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        color: white;
+    }
+    .chatHeader span {
+        color: yellow;
+    }
+    .chatHeader img {
+        margin-top: 5px;
+        height: 5vh;
+        transition: 700ms;
+        cursor: pointer;
+    }
+    .chatHeader img:hover {
+        transform: scale(1.1) rotate(180deg);
+    }
+    .chatBox {
+        border: 1px solid rgb(5, 3, 3);
+        height: 84%;
+        box-sizing: border-box;
+    }
+    .inputBox {
+        border: 1px solid rgb(5, 3, 3);
+        height: 8%;
+        display: flex;
+        overflow: hidden;
+    }
+    #chatInput {
+        width: 90%;
+        background-color: rgb(255, 255, 255);
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+        padding-left: 2.4vmax;
+        font-size: 19px;
+    }
+    #sendBtn {
+        width: 10%;
+        box-sizing: border-box;
+        background-color: aqua;
+        border: none;
+        border-left: 1px solid black;
+        transition: 200ms;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .chatContainer {
+        width: 100%; /* Adjust width for smaller screens */
+        height: 100%; /* Adjust height for smaller screens */
+    }
+
+    .inputBox {
+        height: auto; /* Adjust height to accommodate the keyboard */
+    }
+}

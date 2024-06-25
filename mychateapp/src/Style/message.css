@@ -1,0 +1,51 @@
+.messageBox {
+    padding: 1vmax;
+    margin: 1vmax;
+    border-radius: 6px;
+    display: inline-block;
+    clear: both;
+    font-size: 14px;
+}
+
+.right {
+    float: right;
+    background-color: aquamarine;
+    color: black;
+    text-align: right; /* Align text to the right */
+}
+
+.left {
+    float: left;
+    background-color: rgb(110, 255, 115);
+    text-align: left; /* Align text to the left */
+}
+
+@media screen and (max-aspect-ratio: 7/10) {
+    .messageBox {
+        padding: 2vmax;
+        margin: 1vmax;
+        border-radius: 6px;
+        font-size: 20px;
+    }
+    .right {
+        float: right;
+        background-color: aquamarine;
+        color: black;
+        text-align: right;
+    }
+    .left {
+        float: left;
+        background-color: rgb(110, 255, 115);
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 1080px) and (min-height: 2400px){
+    .messageBox{
+        /* width: 56%; */
+        padding: 2vmax;
+        margin: 1vmax;
+        border-radius: 6px;
+        font-size: 25px;
+    }
+}
